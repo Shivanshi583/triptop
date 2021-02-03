@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+</style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">TRIPTOP</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href="#portfolio">ATTRACTIONS</a></li>
+        <li><a href="#pricing">TOURS</a></li>
+        <li><a href="#contact">BOOKING</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>SIGN UP TO KNOW MORE</h1> 
+  <p>WE PLAN THE TRAVEL ACCORDING TO YOU</p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">SIGN-UP</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>ATTRACTIONS</h2><br>
+  <h4>YOU SHOULD NOT MISS THIS</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="./IMAGES/K.jpg" alt="Paris" width="400" height="300">
+        <p><strong>UTTARAKHAND</strong></p>
+        <p>RS. 11000 FOR 5 DAYS</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="./IMAGES/goa.jpg" alt="New York" width="400" height="300">
+        <p><strong>GOA</strong></p>
+        <p>RS. 12000 FOR 7 DAYS</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="./IMAGES/tea-garden-hill-of-munnar.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>KERALA</strong></p>
+        <p>RS. 13000 FOR 9 DAYS</p>
+      </div>
+    </div>
+    <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="./IMAGES/th (4).jpg" alt="Paris" width="400" height="300">
+        <p><strong>KASHMIR</strong></p>
+        <p>RS.19876 FOR 14 DAYS</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="./IMAGES/th (2).jpg" alt="New York" width="400" height="300">
+        <p><strong>ANDAMAN AND NICOBAR ISLANDS</strong></p>
+        <p>RS. 21000 FOR 6 DAYS</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="./IMAGES/sikkim.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>LADAKH</strong></p>
+        <p>RS. 15000 FOR 6 DAYS</p>
+      </div>
+    </div>
+  </div><br>
+
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>BASIC TOURS</h2>
+    <h4>CHOOSE A PLAN THAT WORKS BEST FOR YOU</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>NORTH-INDIA</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>3 DAYS</strong> KASHMIR</p>
+          <p><strong>4 DAYS</strong>HIMACHAL PRADESH</p>
+          <p><strong>3 DAYS</strong> UTTARAKHAND</p>
+          <p><strong>2 DAYS</strong> RAJASHTHAN</p>
+          <p><strong>3 DAYS</strong> LADAKH</p>
+        </div>
+        <div class="panel-footer">
+          <h3>RS. 46000</h3>
+          
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>SOUTH-INDIA</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>3 DAYS</strong> KERALA</p>
+          <p><strong>4 DAYS</strong> LAKSHADEEP </p>
+          <p><strong>3 DAYS</strong> ANDAMAN AND NICOBAR</p>
+          <p><strong>2 DAYS</strong> TAMIL NADU</p>
+          <p><strong>3 DAYS</strong> ANDRA-PRADESH </p>
+        </div>
+        <div class="panel-footer">
+          <h3>RS. 35000</h3>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>WESTERN INDIA</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>3 DAYS</strong> GUJRAT</p>
+          <p><strong>4 DAYS</strong> RAJASTHAN</p>
+          <p><strong>3 DAYS</strong> GOA</p>
+          <p><strong>2 DAYS</strong> DAMAN AND DIU</p>
+          <p><strong>3 DAYS</strong> MAHARASHTRA</p>
+        </div>
+        <div class="panel-footer">
+          <h3>RS. 49000</h3>
+        </div>
+      </div>      
+    </div>    
+    <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>NORTH-EAST</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>3 DAYS</strong> WEST BENGAL</p>
+          <p><strong>4 DAYS</strong> SIKKIM</p>
+          <p><strong>3 DAYS</strong> ARUNANCHAL PRADESH</p>
+          <p><strong>2 DAYS</strong> ASSAM</p>
+          <p><strong>3 DAYS</strong> NAGALAND</p>
+        </div>
+        <div class="panel-footer">
+          <h3>RS. 35000</h3>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>FUN WITH THE GANG</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>3 DAYS</strong> UTTARAKHAND</p>
+          <p><strong>4 DAYS</strong> SHIMLA</p>
+          <p><strong>3 DAYS</strong> GOA</p>
+          <p><strong>2 DAYS</strong> DEHRADUN</p>
+          <p><strong>3 DAYS</strong> LADAKH</p>
+        </div>
+        <div class="panel-footer">
+          <h3>RS. 52000</h3>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>RELIGIOUS TOUR</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>3 DAYS</strong> UTTARAKHAND</p>
+          <p><strong>4 DAYS</strong> SRINAGAR</p>
+          <p><strong>3 DAYS</strong> UJJAIN</p>
+          <p><strong>2 DAYS</strong> VARANASI</p>
+          <p><strong>3 DAYS</strong> PURI</p>
+        </div>
+        <div class="panel-footer">
+          <h3>RS. 32000</h3>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">BOOK YOUR TOUR</h2>
+  <form action="">
+  <div class="row">
+    
+    <div class="col-sm-12 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="TOUR-NAME" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="email" placeholder="NUMBER OF PEOPLE" type="text" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="QUERY" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">BOOK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
